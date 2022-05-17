@@ -1,0 +1,90 @@
+$session = New-Object Microsoft.PowerShell.Commands.WebRequestSession
+
+$session.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) 
+AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36"
+
+$session.Cookies.Add((New-Object System.Net.Cookie("_ga", "GA1.3.2044335696.1645667375", "/", ".med.navy.mil")))
+
+$session.Cookies.Add((New-Object System.Net.Cookie(".ASPXANONYMOUS", "OVLygVZfJIr-DU8cWk4kE1EdjG4TYCrRXjrTlOj-TxJmccFnYkEzya2RSZB-fzWJG8qwnS5KPgdAMS_y9264P2UOe8L2yIT3yhOqdbed2hrnpAlZ0", "/", "www.med.navy.mil")))
+
+$session.Cookies.Add((New-Object System.Net.Cookie("dnn_IsMobile", "False", "/", "www.med.navy.mil")))
+
+$session.Cookies.Add((New-Object System.Net.Cookie("language", "en-US", "/", "www.med.navy.mil")))
+
+$session.Cookies.Add((New-Object System.Net.Cookie("ARRAffinity", "f5c6c911f7848d3dac0ab02432c452e24c750420b00c500e02db159e43d4a071", "/", ".www.med.navy.mil")))
+
+$session.Cookies.Add((New-Object System.Net.Cookie("_gid", "GA1.3.1297290638.1650145279", "/", ".med.navy.mil")))
+
+$session.Cookies.Add((New-Object System.Net.Cookie("_ga", "GA1.1.2044335696.1645667375", "/", ".navy.mil")))
+
+$session.Cookies.Add((New-Object System.Net.Cookie("_ga_WHSL60Z4WZ", "GS1.1.1650145279.2.1.1650145317.0", "/", ".navy.mil")))
+
+Invoke-WebRequest -UseBasicParsing -Uri "https://www.med.navy.mil/Directives/Notices/" `
+-Method "POST" `
+-WebSession $session `
+-Headers @{
+"authority"="www.med.navy.mil"
+  "method"="POST"
+  "path"="/Directives/Notices/"
+  "scheme"="https"
+  "accept"="text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+  "accept-encoding"="gzip, deflate, br"
+  "accept-language"="en-US,en;q=0.9"
+  "cache-control"="no-cache"
+  "origin"="https://www.med.navy.mil"
+  "pragma"="no-cache"
+  "referer"="https://www.med.navy.mil/Directives/Notices/"
+  "sec-ch-ua"="`" Not A;Brand`";v=`"99`", `"Chromium`";v=`"100`", `"Google Chrome`";v=`"100`""
+  "sec-ch-ua-mobile"="?0"
+  "sec-ch-ua-platform"="`"Windows`""
+  "sec-fetch-dest"="document"
+  "sec-fetch-mode"="navigate"
+  "sec-fetch-site"="same-origin"
+  "sec-fetch-user"="?1"
+  "upgrade-insecure-requests"="1"
+} `
+-ContentType "multipart/form-data; boundary=----WebKitFormBoundarypL0W0M9qZqhJDhvx" `
+-Body $session = New-Object Microsoft.PowerShell.Commands.WebRequestSession
+$session.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36"
+$session.Cookies.Add((New-Object System.Net.Cookie("_ga", "GA1.3.2044335696.1645667375", "/", ".med.navy.mil")))
+$session.Cookies.Add((New-Object System.Net.Cookie(".ASPXANONYMOUS", "OVLygVZfJIr-DU8cWk4kE1EdjG4TYCrRXjrTlOj-TxJmccFnYkEzya2RSZB-fzWJG8qwnS5KPgdAMS_y9264P2UOe8L2yIT3yhOqdbed2hrnpAlZ0", "/", "www.med.navy.mil")))
+$session.Cookies.Add((New-Object System.Net.Cookie("dnn_IsMobile", "False", "/", "www.med.navy.mil")))
+$session.Cookies.Add((New-Object System.Net.Cookie("language", "en-US", "/", "www.med.navy.mil")))
+$session.Cookies.Add((New-Object System.Net.Cookie("ARRAffinity", "f5c6c911f7848d3dac0ab02432c452e24c750420b00c500e02db159e43d4a071", "/", ".www.med.navy.mil")))
+$session.Cookies.Add((New-Object System.Net.Cookie("_gid", "GA1.3.1297290638.1650145279", "/", ".med.navy.mil")))
+$session.Cookies.Add((New-Object System.Net.Cookie("_ga", "GA1.1.2044335696.1645667375", "/", ".navy.mil")))
+$session.Cookies.Add((New-Object System.Net.Cookie("_ga_WHSL60Z4WZ", "GS1.1.1650145279.2.1.1650145317.0", "/", ".navy.mil")))
+Invoke-WebRequest -UseBasicParsing -Uri "https://www.med.navy.mil/Directives/Notices/" `
+-Method "POST" `
+-WebSession $session `
+-Headers @{
+"authority"="www.med.navy.mil"
+  "method"="POST"
+  "path"="/Directives/Notices/"
+  "scheme"="https"
+  "accept"="text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
+  "accept-encoding"="gzip, deflate, br"
+  "accept-language"="en-US,en;q=0.9"
+  "cache-control"="no-cache"
+  "origin"="https://www.med.navy.mil"
+  "pragma"="no-cache"
+  "referer"="https://www.med.navy.mil/Directives/Notices/"
+  "sec-ch-ua"="`" Not A;Brand`";v=`"99`", `"Chromium`";v=`"100`", `"Google Chrome`";v=`"100`""
+  "sec-ch-ua-mobile"="?0"
+  "sec-ch-ua-platform"="`"Windows`""
+  "sec-fetch-dest"="document"
+  "sec-fetch-mode"="navigate"
+  "sec-fetch-site"="same-origin"
+  "sec-fetch-user"="?1"
+  "upgrade-insecure-requests"="1"
+} `
+-ContentType "multipart/form-data; boundary=----WebKitFormBoundarypL0W0M9qZqhJDhvx" `
+-Body 'NOTE 1500'
+
+
+
+"__VIEWSTATE" value="6S0QXRPzKokGN+mDFYAIfab6nA1jf9E2jxPd5YtcaOzddNI+r8FNOh2/byOq8MHb+neKcYv3fYTlw0xto5C9ZVdAM57myNUC5ztL/EbuXJoMuwJ+TyLRLlQO00e66qSOExB16h7/ucAecZQc1TJYgb3xGynJ37rPdJf735kc5VtcFKOpqqHufg34jrvfis0ZEfYct52putA3NQPEeZQGFbrrtZbMHSh9cYdOR/CVF1jcRtRne3FCnl+4RFlSFtzWGX4p54rUVqjIXL7sK1TSMLlkQl5jZ+Ol7nLTJLaL/lhnjoMhzKeg0fV1r454KMlLRXn8IC0NEPY+7O604TmLoaZgWg864dnTC7X37NZAvB5LNOcqWt3GiI6w7wd3gyzDa6mO70GXLJdFqBVMib+VqHLtoQQasiCfOrTEvzgfumUKlYPDk/T9W1JsdpY8mKBz0kipBLI/pVR/OgMBRuwYgvqAA04g/cKGagszB696wDr+GZOvRnmNKbDWAb6491zjC0Imy0MKHbLlLTbe9SvH2/vHylnGytoNmnvZxL3TTzhKnQ8ysJiSs2/AAd8vb2mkOuUYIz/xveL1cjVB5fEjo8g0GtMbzo2tJ87V8QNoaN/eATIckOoOypjqdBQH6Ep4O5vyKJL1RUkItd5M6qi3PeWukoG+FKFUufmz3KRPE0QgbwLIB1eAoexCz6hEFjVk1aarFo1OkO1QqGBITufeUd+v9Lp0J2bpIsLBi5yrR/g0xa2O1lJvqAh2uIZhzp6UOlUpfqGlnvVmFP2TSQ63UtUDg1I/cfWoRa5zPIc2CihX7MFX
+
+"__VIEWSTATEGENERATOR" = "CA0B0334"
+
+"__EVENTVALIDATION" = "hLB1mYPwqg5Zj34T1rWSoS5k10qNAw6+Lm1HV2t0rykMyBkiYTQzwraAqGdIpF6nZKn0zQqBWqlvU5DeUvPiZ2lw/+MjG7e+Ca2XCS886S+WFcI7S56DBLPE35mtrgChmm3vZLm0ovcB9pjcVE3SNLU4J3wjCDqtuG7QD2qGWz6n64N0/fMm6dtXd5WNT1+3f2WxblctUgMe4/xfS1diNX3jnoBXp7S1GZKVOtgZGGA2nQgwxp1dNAPdIdalcNwrWHRnPQL5JyV5/bfux1OORtwcy/ZIysNfb97O6GbBs6hJuEllaUGl0Fb4vfurEiWS8sP6tpjj7TGsFVB5si6Y23+dCVeCrJCvve/JAie+XXmCWQanqYMhAaLXa4Ll2iRTEXIlVkfAY/WxOFAoyAwFTPMkPVtatSdH/+Kvid39fwhm5KWoB4fIS0VS+QHk1hyvcml1sgQZmBA2MtKTIxi7jKxan68="
